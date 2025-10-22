@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convite de Casamento</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #f8f7f4;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .convite {
+      width: 100%;
+      max-width: 600px;
+      height: 100%;
+      max-height: 100vh;
+      background: #fff;
+      border-radius: 0;
+      box-shadow: none;
+      text-align: center;
+      padding: 25px 20px 40px;
+      box-sizing: border-box;
+      background-image: url('flor3.jpg');
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      background-size: cover;
+      overflow-y: auto; /* rolagem se o conteúdo passar do limite */
+    }
+
+    .convite h4 {
+      font-size: 14px;
+      color: #6d5f50;
+      margin: 5px 0;
+    }
+
+    .nomes {
+      font-family: 'Great Vibes', cursive;
+      font-size: 38px;
+      color: #7b5c42;
+      margin: 10px 0 15px;
+    }
+
+    .texto {
+      color: #4f4a45;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .data {
+      border-radius: 10px;
+      padding: 10px;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+    .data h3 {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      color: #7b5c42;
+    }
+
+    .data small {
+      display: block;
+      font-size: 12px;
+      color: #666;
+    }
+
+    .data strong {
+      display: block;
+      font-size: 30px;
+      margin: 5px 0;
+      color: #7b5c42;
+    }
+
+    .icones {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    .icone {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50px;
+      margin: 5px 0;
+      text-decoration: none;
+      color: #7b5c42;
+      transition: transform 0.3s;
+    }
+
+    .icone:hover {
+      transform: scale(1.05);
+    }
+
+    .icone span {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-bottom: 5px;
+      box-shadow: 0 3px 4px rgba(0,0,0,0.1);
+    }
+
+    .icone label {
+      font-size: 11px;
+      color: #4f4a45;
+    }
+
+    .dica {
+      margin-top: 15px;
+      font-size: 11px;
+      color: #888;
+    }
+
+    /* 🌸 Ajuste específico para telas pequenas */
+    @media (max-width: 768px) {
+      .convite {
+        border-radius: 0;
+        width: 100vw;
+        height: 100vh;
+        padding: 20px 15px;
+      }
+
+      .nomes {
+        font-size: 32px;
+      }
+
+      .icone span {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="convite"></br></br></br>
+    <h4>Com a benção de Deus</h4>
+    <div class="nomes">Julio Cesar<br>e Ana Beatriz</div>
+    <div class="texto">Convidam para a cerimônia de seu casamento</div>
+
+    <div class="data">
+      <small>Novembro</small>
+      <strong>23</strong>
+      <small>Sábado · 2019 · Às 16 horas</small>
+    </div>
+
+    <div class="icones">
+      <a href="fotos.html" class="icone">
+        <span>📍</span>
+        <label>Local da cerimônia</label>
+      </a>
+      <a href="#" class="icone">
+        <span>🏛️</span>
+        <label>Local da recepção</label>
+      </a>
+      <a href="#" class="icone">
+        <span>💌</span>
+        <label>Confirmação</label>
+      </a>
+      <a href="#" class="icone">
+        <span>🎁</span>
+        <label>Lista de presentes</label>
+      </a>
+    </div>
+
+    <div class="dica">Clique nos ícones para interagir</div>
+  </div>
+</body>
+</html>
