@@ -7,35 +7,32 @@
   <title>Convite de Casamento</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      background-color: #f8f7f4;
-      font-family: 'Poppins', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+   html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f8f7f4;
+  font-family: 'Poppins', sans-serif;
+  display: block; /* 👈 remove o flex */
+}
 
-    .convite {
-      width: 100%;
-      max-width: 600px;
-      height: 100%;
-      max-height: 100vh;
-      background: #fff;
-      border-radius: 0;
-      box-shadow: none;
-      text-align: center;
-      padding: 25px 20px 40px;
-      box-sizing: border-box;
-      background-image: url('flor3.jpg');
-      background-repeat: no-repeat;
-      background-position: bottom center;
-      background-size: cover;
-      overflow-y: auto; /* rolagem se o conteúdo passar do limite */
-    }
+.convite {
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  background: #fff;
+  text-align: center;
+  padding: 25px 20px 40px;
+  margin: 0 auto; /* 👈 centraliza */
+  box-sizing: border-box;
+  background-image: url('flor3.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  overflow-y: auto;
+  transform: translateZ(0); /* 👈 força renderização nítida */
+}
 
     .convite h4 {
       font-size: 14px;
@@ -179,11 +176,10 @@
         <label>Lista de presentes</label>
       </a>
     </div>
-<a href="intent://www.exemplo.com/#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https://www.exemplo.com;end">
-  Abrir no Chrome (Android)
-</a>
+
     <div class="dica">Clique nos ícones para interagir</div>
   </div>
 </body>
 </html>
+
 
